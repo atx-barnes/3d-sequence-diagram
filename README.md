@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# 3D Sequence Diagram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React application that renders sequence diagrams in 3D using Three.js and React Three Fiber. This project provides an interactive and visually appealing way to display sequence diagrams with depth and perspective.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 3D rendering of sequence diagram components
+- Interactive camera controls for rotating and zooming
+- Support for objects, messages, and lifelines
+- Customizable colors and styles
+- Dashed and solid message lines
+- Multi-line text support for labels
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 18
+- TypeScript
+- Three.js
+- React Three Fiber (@react-three/fiber)
+- React Three Drei (@react-three/drei)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/yourusername/3d-sequence-diagram.git
+cd 3d-sequence-diagram
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Start the development server:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application will be available at `http://localhost:3000`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Building for Production
 
-## Learn More
+To create a production build:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
+
+The SequenceDiagram3D component allows you to create interactive 3D sequence diagrams. Key components include:
+
+- Objects: Represent system components or actors
+- Messages: Show communication between objects
+- Lifelines: Represent the timeline of each object
+- Interactive Controls: Orbit, pan, and zoom functionality
